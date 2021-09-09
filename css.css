@@ -1,0 +1,18 @@
+
+    :root {
+    --bg :  rgb(250 250 250);
+    --color: #0f1113;
+    
+    }
+    .dark {
+    --bg : 	#3d3d3d ;
+    --color: rgb(238, 238, 238);
+    
+    }
+    body { 
+     background-color: var(--bg);
+     color: var(--color);
+        
+    }
+    
+ 
