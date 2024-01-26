@@ -4,11 +4,11 @@ function myFunction() {
  }
 // On page load set the theme.
 (function() {
-    let onpageLoad = localStorage.getItem("theme") || "";
+    let onpageLoad = localStorage.getItem("theme") || "light";
     let element = document.body;
     element.classList.add(onpageLoad);
     document.getElementById("theme").textContent =
-      localStorage.getItem("theme") || "light";
+      onpageLoad;
   })();
   
   function themeToggle() {
@@ -17,7 +17,7 @@ function myFunction() {
   
     let theme = localStorage.getItem("theme");
     if (theme && theme === "dark") {
-      localStorage.setItem("theme", "");
+      localStorage.setItem("theme", "light");
     } else {
       localStorage.setItem("theme", "dark");
     }
